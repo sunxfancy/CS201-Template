@@ -1,0 +1,1 @@
+../../LLVM/install/bin/opt -S -load ../../build/CSElimination/libCSElimination.so -CSElimination < $1 > out.ll
