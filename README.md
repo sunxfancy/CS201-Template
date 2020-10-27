@@ -1,11 +1,11 @@
 # CS201-Template
 This template is prepared for all three projects: HelloPass, LivenessAnalysis and Common subexpression elimination.
 
-LLVM folder is used for installing LLVM, and you can read the instructions in its ![Readme](LLVM/README.md).
+LLVM folder is used for installing LLVM, and you can read the instructions in its [Readme](LLVM/README.md).
 Pass folder contains all three passes for those 3 projects.
-test folder contains the example input/output for those 3 projects. For example, ![1.ll](test/phase2/1.ll) is the input file and ![1.out](test/phase2/1.out) is the output.
+test folder contains the example input/output for those 3 projects. For example, [1.ll](test/phase2/1.ll) is the input file and [1.out](test/phase2/1.out) is the output.
 
-In phase2/phase3 test folder, there are two scripts: ![create_input.sh](test/phase2/create_input.sh) and ![test.sh](test/phase2/test.sh). `create_input.sh` can generate new input files from C source code and `test.sh` can easily run your pass using `opt` tool. For example, if you have 1.c as the source code.
+In phase2/phase3 test folder, there are two scripts: [create_input.sh](test/phase2/create_input.sh) and [test.sh](test/phase2/test.sh). `create_input.sh` can generate new input files from C source code and `test.sh` can easily run your pass using `opt` tool. For example, if you have 1.c as the source code.
 
 ```sh
 cd test/phase2
