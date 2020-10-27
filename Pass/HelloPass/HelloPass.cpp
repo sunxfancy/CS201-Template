@@ -66,6 +66,19 @@ namespace
             }
           }
         }
+
+        errs() << "predecessors:";
+        for (auto *pred: predecessors(&basic_block)) {
+          // get all predecessors of the current basic block
+          errs() << " " << pred->getName();
+        }
+        errs() << "\n";
+        errs() << "successors:";
+        for (auto *succ: successors(&basic_block)) {
+          // get all successors of the current basic block
+          errs() << " " << succ->getName();
+        }
+        errs() << "\n";
       }
       return false;
     }

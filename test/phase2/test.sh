@@ -1,1 +1,1 @@
-../../LLVM/install/bin/opt -S -load ../../build/LivenessAnalysis/libLivenessAnalysis.so -LivenessAnalysis < $1 > out.ll
+../../LLVM/install/bin/opt -S -load ../../build/LivenessAnalysis/libLivenessAnalysis.so -LivenessAnalysis < $1 > /dev/null 2> $1.out
