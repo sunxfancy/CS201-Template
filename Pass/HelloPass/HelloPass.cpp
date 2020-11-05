@@ -5,6 +5,7 @@
 #include "llvm/IR/Type.h"
 #include "llvm/IR/Instructions.h"
 #include "llvm/IR/Instruction.h"
+#include "llvm/IR/CFG.h"
 #include <string>
 
 using namespace llvm;
@@ -47,14 +48,19 @@ namespace
               errs() << "This is Addition"
                      << "\n";
             }
-            if (inst.getOpcode() == Instruction::Add)
+            if (inst.getOpcode() == Instruction::Sub)
             {
-              errs() << "This is Addition"
+              errs() << "This is Subtraction"
                      << "\n";
             }
             if (inst.getOpcode() == Instruction::Mul)
             {
               errs() << "This is Multiplication"
+                     << "\n";
+            }
+            if (inst.getOpcode() == Instruction::SDiv)
+            {
+              errs() << "This is Division"
                      << "\n";
             }
 
@@ -66,7 +72,6 @@ namespace
             }
           }
         }
-
         errs() << "predecessors:";
         for (auto *pred: predecessors(&basic_block)) {
           // get all predecessors of the current basic block
